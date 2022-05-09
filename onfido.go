@@ -18,9 +18,10 @@ import (
 // Constants
 const (
 	ClientVersion   = "0.1.0"
-	DefaultEndpoint = "https://api.eu.onfido.com/v3.1"
 	TokenEnv        = "ONFIDO_TOKEN"
 )
+
+var DefaultEndpoint = "https://api.eu.onfido.com/v3.1"
 
 type OnfidoClient interface {
 	SetHTTPClient(client HTTPRequester)
